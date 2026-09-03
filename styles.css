@@ -265,3 +265,78 @@ footer{background:#180c11;color:#fff;padding:60px 0 25px}.footer-grid{display:gr
 .social-footer a[aria-label*="YouTube"]:hover{
   color:#ff0000;
 }
+
+
+/* =========================================================
+   V4 â€” FOTOGRAFÃA MÃS NATURAL Y EQUILIBRADA
+   ========================================================= */
+
+/* Escritorio: mantener proporciÃ³n de la fotografÃ­a y evitar
+   el recorte excesivo del rostro. La imagen queda a la derecha
+   y el lado izquierdo conserva espacio limpio para el texto. */
+@media(min-width:951px){
+  .hero-photo{
+    background-size:auto 100%;
+    background-repeat:no-repeat;
+    background-position:right center;
+  }
+  .hero-shade{
+    background:
+      linear-gradient(90deg,
+        rgba(25,11,14,1) 0%,
+        rgba(25,11,14,.96) 28%,
+        rgba(30,14,16,.70) 48%,
+        rgba(25,12,12,.18) 72%,
+        rgba(25,12,12,.35) 100%);
+  }
+}
+
+/* Tablet: conservar la fotografÃ­a completa en altura y
+   darle mÃ¡s espacio visual al contenido. */
+@media(min-width:681px) and (max-width:950px){
+  .hero-photo{
+    background-size:auto 100%;
+    background-repeat:no-repeat;
+    background-position:78% center;
+  }
+  .hero-shade{
+    background:
+      linear-gradient(90deg,
+        rgba(25,11,14,.98) 0%,
+        rgba(25,11,14,.84) 42%,
+        rgba(25,12,12,.35) 100%);
+  }
+}
+
+/* MÃ³vil: la fotografÃ­a permanece proporcionada, sin zoom
+   excesivo, y se mantiene hacia la derecha. */
+@media(max-width:680px){
+  .hero-photo{
+    background-size:auto 100%;
+    background-repeat:no-repeat;
+    background-position:88% center;
+  }
+  .hero-shade{
+    background:
+      linear-gradient(90deg,
+        rgba(25,11,14,.98) 0%,
+        rgba(25,11,14,.82) 48%,
+        rgba(25,12,12,.42) 100%);
+  }
+}
+
+/* TelÃ©fonos pequeÃ±os: priorizar el texto sin perder la
+   presencia de la fotografÃ­a. */
+@media(max-width:420px){
+  .hero-photo{
+    background-size:auto 100%;
+    background-position:92% center;
+  }
+  .hero-shade{
+    background:
+      linear-gradient(90deg,
+        rgba(25,11,14,.99) 0%,
+        rgba(25,11,14,.86) 52%,
+        rgba(25,12,12,.48) 100%);
+  }
+}
