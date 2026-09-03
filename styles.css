@@ -453,5 +453,31 @@ footer{background:#180c11;color:#fff;padding:60px 0 25px}.footer-grid{display:gr
   .hero-photo{
     background-size:auto 110%;
     background-position:91% center;
+    
+  }/* FONDO NEGRO DEL HERO — fotografía original intacta */
+.hero{
+  background:#000 !important;
+}
+
+.hero-photo{
+  background-color:#000 !important;
+  background-size:contain !important;
+  background-repeat:no-repeat !important;
+  background-position:right center !important;
+}
+
+/* Computadoras y pantallas medianas */
+@media (min-width:681px){
+  .hero-photo{
+    background-size:contain !important;
+    background-position:right center !important;
   }
 }
+
+/* Celulares */
+@media (max-width:680px){
+  .hero-photo{
+    background-size:contain !important;
+    background-position:center center !important;
+  }
+}}
