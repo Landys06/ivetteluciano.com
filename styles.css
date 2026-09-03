@@ -510,3 +510,21 @@ footer{background:#180c11;color:#fff;padding:60px 0 25px}.footer-grid{display:gr
     width:16%;
   }
 }
+/* Integración final de la fotografía con el fondo negro */
+.hero-photo::after{
+  width:30% !important;
+  background:linear-gradient(
+    to right,
+    rgba(0,0,0,0) 0%,
+    rgba(0,0,0,.15) 20%,
+    rgba(0,0,0,.65) 55%,
+    rgba(0,0,0,.92) 78%,
+    #000 100%
+  ) !important;
+}
+
+@media(max-width:680px){
+  .hero-photo::after{
+    width:24% !important;
+  }
+}
