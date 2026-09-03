@@ -393,3 +393,65 @@ footer{background:#180c11;color:#fff;padding:60px 0 25px}.footer-grid{display:gr
     background-position:92% center;
   }
 }
+
+
+/* =========================================================
+   V6 FINAL â€” ELIMINAR LA FRANJA GRIS Y CONSERVAR EL BUEN
+   ENCUADRE DE IVETTE
+   ========================================================= */
+
+/* Escritorio: ampliar ligeramente la fotografÃ­a y desplazarla
+   para ocultar el borde gris de la imagen original. */
+@media(min-width:951px){
+  .hero{
+    background:#1a0d0d;
+  }
+  .hero-photo{
+    background-size:auto 110%;
+    background-repeat:no-repeat;
+    background-position:82% center;
+  }
+  .hero-shade{
+    background:
+      linear-gradient(90deg,
+        rgba(25,11,14,1) 0%,
+        rgba(25,11,14,.96) 27%,
+        rgba(30,14,16,.66) 49%,
+        rgba(25,12,12,.20) 76%,
+        rgba(25,12,12,.42) 100%);
+  }
+}
+
+/* Tablet: un poco mÃ¡s de escala para evitar zonas vacÃ­as. */
+@media(min-width:681px) and (max-width:950px){
+  .hero{
+    background:#1a0d0d;
+  }
+  .hero-photo{
+    background-size:auto 110%;
+    background-repeat:no-repeat;
+    background-position:86% center;
+  }
+}
+
+/* MÃ³vil: conservar el encuadre que ya funcionaba, pero
+   con una ampliaciÃ³n ligera para que no aparezcan bordes. */
+@media(max-width:680px){
+  .hero{
+    background:#1a0d0d;
+  }
+  .hero-photo{
+    background-size:auto 108%;
+    background-repeat:no-repeat;
+    background-position:89% center;
+  }
+}
+
+/* TelÃ©fonos pequeÃ±os: mantener la imagen presente sin
+   sacrificar la legibilidad del contenido. */
+@media(max-width:420px){
+  .hero-photo{
+    background-size:auto 110%;
+    background-position:91% center;
+  }
+}
