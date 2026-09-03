@@ -1,44 +1,105 @@
-/* CORRECCIÃ“N FINAL DEL BORDE IZQUIERDO DEL HERO
-   No modifica la fotografÃ­a original.
+/* HERO â€” CORRECCIÃ“N FINAL
+   Fondo negro elegante, fotografÃ­a original intacta
+   y texto claramente visible.
 */
 
-/* Asegura que la capa negra quede POR ENCIMA de la imagen. */
-.hero-photo{
-  position:absolute !important;
-  z-index:1 !important;
-  background-color:#000 !important;
+/* Fondo general del hÃ©roe */
+.hero{
+  background:#000 !important;
+  overflow:hidden;
 }
 
-/* Cubre Ãºnicamente la franja clara del borde izquierdo
-   y la integra suavemente con el fondo negro. */
+/* FotografÃ­a original */
+.hero-photo{
+  position:absolute !important;
+  inset:0 !important;
+  z-index:1 !important;
+  background-color:#000 !important;
+  background-repeat:no-repeat !important;
+  background-size:contain !important;
+  background-position:right center !important;
+}
+
+/* Suaviza el borde de la fotografÃ­a sin oscurecer el texto */
 .hero-photo::before{
   content:"";
   position:absolute;
   left:0;
   top:0;
   bottom:0;
-  width:24%;
-  z-index:5;
+  width:23%;
+  z-index:2;
   pointer-events:none;
   background:linear-gradient(
     to right,
     #000 0%,
-    #000 38%,
-    rgba(0,0,0,.92) 58%,
-    rgba(0,0,0,.55) 74%,
-    rgba(0,0,0,.12) 90%,
+    #000 35%,
+    rgba(0,0,0,.82) 55%,
+    rgba(0,0,0,.35) 78%,
     rgba(0,0,0,0) 100%
   );
 }
 
-/* Conserva el texto y la capa visual por encima de la foto. */
+/* Capa visual detrÃ¡s del contenido */
 .hero-shade{
   position:absolute !important;
+  inset:0 !important;
   z-index:2 !important;
+  pointer-events:none;
+  background:linear-gradient(
+    90deg,
+    rgba(10,5,7,.18) 0%,
+    rgba(10,5,7,.10) 38%,
+    rgba(0,0,0,0) 72%
+  ) !important;
+}
+
+/* IMPORTANTE: el texto queda por encima de todas las capas */
+.hero-inner{
+  position:relative !important;
+  z-index:10 !important;
+  color:#fff !important;
+}
+
+.hero-copy{
+  position:relative;
+  z-index:11;
+}
+
+.hero h1{
+  color:#fff !important;
+  text-shadow:0 2px 18px rgba(0,0,0,.35);
+}
+
+.hero h1 em{
+  color:var(--gold2) !important;
+}
+
+.hero p{
+  color:rgba(255,255,255,.92) !important;
+  text-shadow:0 1px 10px rgba(0,0,0,.30);
+}
+
+.hero .eyebrow,
+.hero .kicker,
+.hero .subtitle{
+  color:var(--gold2) !important;
+}
+
+/* Botones del hÃ©roe siempre visibles */
+.hero .actions,
+.hero .btn{
+  position:relative;
+  z-index:12;
 }
 
 /* Computadoras y tabletas */
 @media (min-width:681px){
+  .hero-photo{
+    background-size:contain !important;
+    background-position:right center !important;
+  }
+
   .hero-photo::before{
     width:23%;
   }
@@ -46,15 +107,45 @@
 
 /* Celulares */
 @media (max-width:680px){
+  .hero{
+    background:#000 !important;
+  }
+
+  .hero-photo{
+    background-size:contain !important;
+    background-position:center center !important;
+  }
+
   .hero-photo::before{
     width:16%;
     background:linear-gradient(
       to right,
       #000 0%,
-      #000 30%,
-      rgba(0,0,0,.84) 58%,
-      rgba(0,0,0,.30) 80%,
+      #000 25%,
+      rgba(0,0,0,.65) 55%,
+      rgba(0,0,0,.18) 78%,
       rgba(0,0,0,0) 100%
     );
+  }
+
+  .hero-shade{
+    background:linear-gradient(
+      90deg,
+      rgba(10,5,7,.18) 0%,
+      rgba(10,5,7,.08) 45%,
+      rgba(0,0,0,0) 100%
+    ) !important;
+  }
+
+  .hero-inner{
+    z-index:10 !important;
+  }
+
+  .hero h1{
+    color:#fff !important;
+  }
+
+  .hero p{
+    color:rgba(255,255,255,.94) !important;
   }
 }
