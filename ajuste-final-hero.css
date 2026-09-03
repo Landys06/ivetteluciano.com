@@ -1,6 +1,5 @@
-/* AJUSTE FINAL DEL HERO
-   Fondo negro + fotografÃ­a original intacta.
-   Este archivo no modifica assets/ivette.jpg.
+/* HERO FINAL â€” fondo negro con fotografÃ­a original intacta
+   No modifica assets/ivette.jpg.
 */
 
 .hero{
@@ -25,12 +24,13 @@
   background:linear-gradient(
     to right,
     #000 0%,
-    rgba(0,0,0,.92) 5%,
-    rgba(0,0,0,.35) 14%,
-    rgba(0,0,0,0) 25%,
-    rgba(0,0,0,0) 72%,
-    rgba(0,0,0,.08) 82%,
-    rgba(0,0,0,.55) 94%,
+    #000 9%,
+    rgba(0,0,0,.88) 13%,
+    rgba(0,0,0,.35) 18%,
+    rgba(0,0,0,0) 24%,
+    rgba(0,0,0,0) 82%,
+    rgba(0,0,0,.35) 89%,
+    rgba(0,0,0,.88) 96%,
     #000 100%
   );
 }
@@ -39,7 +39,7 @@
   background:linear-gradient(
     90deg,
     rgba(25,11,14,.97) 0%,
-    rgba(25,11,14,.78) 34%,
+    rgba(25,11,14,.80) 34%,
     rgba(25,11,14,.28) 58%,
     rgba(0,0,0,0) 78%
   ) !important;
@@ -50,43 +50,52 @@
     background-size:contain !important;
     background-position:right center !important;
   }
+
   .hero-photo::after{
     background:linear-gradient(
       to right,
       #000 0%,
-      rgba(0,0,0,.90) 7%,
-      rgba(0,0,0,.30) 20%,
-      rgba(0,0,0,0) 32%,
-      rgba(0,0,0,0) 76%,
-      rgba(0,0,0,.50) 95%,
+      #000 7%,
+      rgba(0,0,0,.82) 12%,
+      rgba(0,0,0,.28) 20%,
+      rgba(0,0,0,0) 28%,
+      rgba(0,0,0,0) 80%,
+      rgba(0,0,0,.40) 90%,
+      rgba(0,0,0,.82) 97%,
       #000 100%
     );
   }
 }
 
 @media (max-width:680px){
+  .hero{
+    background:#000 !important;
+  }
+
   .hero-photo{
     background-size:contain !important;
     background-position:center center !important;
     background-color:#000 !important;
   }
+
   .hero-photo::after{
     background:linear-gradient(
       to right,
       #000 0%,
-      rgba(0,0,0,.58) 8%,
-      rgba(0,0,0,0) 22%,
-      rgba(0,0,0,0) 78%,
-      rgba(0,0,0,.58) 92%,
+      rgba(0,0,0,.55) 6%,
+      rgba(0,0,0,0) 20%,
+      rgba(0,0,0,0) 80%,
+      rgba(0,0,0,.55) 94%,
       #000 100%
     );
   }
+
   .hero-shade{
     background:linear-gradient(
       90deg,
       rgba(25,11,14,.94) 0%,
       rgba(25,11,14,.58) 44%,
-      rgba(0,0,0,.12) 100%
+      rgba(0,0,0,.10) 100%
     ) !important;
   }
 }
@@ -95,5 +104,17 @@
   .hero-photo{
     background-size:contain !important;
     background-position:center center !important;
+  }
+
+  .hero-photo::after{
+    background:linear-gradient(
+      to right,
+      #000 0%,
+      rgba(0,0,0,.48) 7%,
+      rgba(0,0,0,0) 22%,
+      rgba(0,0,0,0) 78%,
+      rgba(0,0,0,.48) 93%,
+      #000 100%
+    );
   }
 }
