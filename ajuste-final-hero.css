@@ -38,7 +38,6 @@
     rgba(0,0,0,0) 100%
   );
 }
-
 /* Capa visual detrÃ¡s del contenido */
 .hero-shade{
   position:absolute !important;
@@ -52,7 +51,6 @@
     rgba(0,0,0,0) 72%
   ) !important;
 }
-
 /* IMPORTANTE: el texto queda por encima de todas las capas */
 .hero-inner{
   position:relative !important;
