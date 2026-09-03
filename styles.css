@@ -340,3 +340,56 @@ footer{background:#180c11;color:#fff;padding:60px 0 25px}.footer-grid{display:gr
         rgba(25,12,12,.48) 100%);
   }
 }
+
+
+/* =========================================================
+   V5 â€” FOTO DE PORTADA SIN FRANJA GRIS
+   ========================================================= */
+
+/* Escritorio: la foto ocupa una columna visual a la derecha;
+   el resto queda intencionalmente oscuro, nunca gris. */
+@media(min-width:951px){
+  .hero-photo{
+    background-color:#1a0d0d;
+    background-size:58% auto;
+    background-repeat:no-repeat;
+    background-position:right center;
+  }
+  .hero-shade{
+    background:
+      linear-gradient(90deg,
+        rgba(25,11,14,1) 0%,
+        rgba(25,11,14,.98) 28%,
+        rgba(30,14,16,.78) 48%,
+        rgba(25,12,12,.28) 70%,
+        rgba(25,12,12,.18) 100%);
+  }
+}
+
+/* Pantallas medianas: la imagen ocupa mÃ¡s espacio para conservar
+   presencia sin generar huecos. */
+@media(min-width:681px) and (max-width:950px){
+  .hero-photo{
+    background-color:#1a0d0d;
+    background-size:auto 100%;
+    background-repeat:no-repeat;
+    background-position:right center;
+  }
+}
+
+/* MÃ³vil: conservar el encuadre que ya funciona bien. */
+@media(max-width:680px){
+  .hero-photo{
+    background-color:#1a0d0d;
+    background-size:auto 100%;
+    background-repeat:no-repeat;
+    background-position:88% center;
+  }
+}
+
+/* TelÃ©fonos pequeÃ±os: un poco mÃ¡s hacia la derecha. */
+@media(max-width:420px){
+  .hero-photo{
+    background-position:92% center;
+  }
+}
