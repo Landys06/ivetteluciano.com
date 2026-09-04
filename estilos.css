@@ -1432,3 +1432,71 @@ footer{background:#180c11;color:#fff;padding:60px 0 25px}.footer-grid{display:gr
     grid-template-columns:1fr !important;
   }
 }
+
+
+  /* CONTACTO FINAL — WHATSAPP Y CORREO */
+
+.contact-section .contact-note,
+.contact-section .contact-form{
+  display:none !important;
+}
+
+.contact-section .contact-inner{
+  display:grid !important;
+  grid-template-columns:1fr 1fr !important;
+  gap:50px !important;
+  align-items:start !important;
+}
+
+.contact-section .contact-copy{
+  grid-column:1 !important;
+  max-width:520px !important;
+}
+
+.contact-section .contact-whatsapp,
+.contact-section .contact-email{
+  grid-column:2 !important;
+  width:100% !important;
+  box-sizing:border-box !important;
+  margin:0 0 20px 0 !important;
+  padding:24px 26px !important;
+  border:1px solid rgba(198,157,72,.45) !important;
+  background:rgba(198,157,72,.08) !important;
+}
+
+.contact-section .contact-whatsapp span,
+.contact-section .contact-email span{
+  display:block !important;
+  margin-bottom:9px !important;
+  color:var(--gold2) !important;
+  font-size:10px !important;
+  font-weight:800 !important;
+  letter-spacing:2px !important;
+}
+
+.contact-section .contact-whatsapp a,
+.contact-section .contact-email a{
+  color:#fff !important;
+  font-size:19px !important;
+  font-weight:600 !important;
+  text-decoration:none !important;
+  overflow-wrap:anywhere !important;
+}
+
+.contact-section .contact-whatsapp a:hover,
+.contact-section .contact-email a:hover{
+  color:var(--gold2) !important;
+}
+
+@media(max-width:700px){
+  .contact-section .contact-inner{
+    grid-template-columns:1fr !important;
+    gap:30px !important;
+  }
+
+  .contact-section .contact-copy,
+  .contact-section .contact-whatsapp,
+  .contact-section .contact-email{
+    grid-column:1 !important;
+  }
+}
