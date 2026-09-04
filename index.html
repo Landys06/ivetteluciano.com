@@ -350,36 +350,40 @@
     <form class="contact-form"
           action="https://formsubmit.co/Landysrd06@gmail.com"
           method="post"
-         enctype="application/x-www-form-urlencoded"
+          enctype="application/x-www-form-urlencoded">
+
+      <input type="hidden" name="_subject" value="Nueva solicitud de conferencia - Ivette Luciano">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_url" value="https://ivetteluciano.com/">
 
       <label>
         Nombre completo
-        <input type="text" name="Nombre" required>
+        <input type="text" name="name" autocomplete="name" required>
       </label>
 
       <label>
         Iglesia u organización
-        <input type="text" name="Iglesia u organización">
+        <input type="text" name="organizacion">
       </label>
 
       <label>
         Correo electrónico
-        <input type="email" name="Correo electrónico" required>
+        <input type="email" name="email" autocomplete="email" required>
       </label>
 
       <label>
         Teléfono o WhatsApp
-        <input type="text" name="Teléfono o WhatsApp">
+        <input type="text" name="telefono" autocomplete="tel">
       </label>
 
       <label>
         País
-        <input type="text" name="País">
+        <input type="text" name="pais" autocomplete="country-name">
       </label>
 
       <label>
         Tipo de evento
-        <select name="Tipo de evento">
+        <select name="tipo_evento">
           <option value="">Selecciona una opción</option>
           <option>Conferencia para mujeres</option>
           <option>Retiro espiritual</option>
@@ -391,12 +395,12 @@
 
       <label>
         Fecha tentativa
-        <input type="text" name="Fecha tentativa" placeholder="Ej. Octubre 2026">
+        <input type="text" name="fecha_tentativa" placeholder="Ej. Octubre 2026">
       </label>
 
       <label>
         Cuéntanos sobre tu evento
-        <textarea name="Detalles del evento" rows="5"></textarea>
+        <textarea name="detalles_evento" rows="5"></textarea>
       </label>
 
       <button type="submit" class="contact-btn">
