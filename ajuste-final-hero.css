@@ -1,2 +1,4 @@
-/* FINAL */
-.hero-photo{background-image:url("assets/ivette-hero-conferenciante.jpg") !important;}
+/* FINAL PORTADA */
+.hero-photo{background:#211a18 url("assets/ivette-hero-conferenciante.jpg") center 28%/cover no-repeat !important;}
+.hero-shade::after{display:none !important;}
+.hero-photo::after{content:"";position:absolute;z-index:4;top:10%;right:7%;width:185px;height:185px;background:url("assets/ministerio-logo-transparent-220.png") center/contain no-repeat;opacity:.14;mix-blend-mode:screen;pointer-events:none;}
