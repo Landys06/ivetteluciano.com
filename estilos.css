@@ -101,3 +101,157 @@ footer{background:#180c11;color:#fff;padding:60px 0 25px}.footer-grid{display:gr
   .footer-grid>div:first-child{grid-column:auto}
   .toast{left:15px;right:15px;bottom:15px;text-align:center}
 }
+/* ==================================================
+   CONFERENCIAS — IVETTE LUCIANO
+   ================================================== */
+
+.conference-section{
+  padding:100px 0;
+  background:#171012;
+  color:#fff;
+}
+
+.conference-inner{
+  display:grid;
+  grid-template-columns:1.25fr .75fr;
+  gap:70px;
+  align-items:center;
+}
+
+.conference-copy{
+  max-width:760px;
+}
+
+.conference-section .section-label{
+  display:block;
+  margin-bottom:18px;
+  color:var(--gold2);
+  font-size:12px;
+  font-weight:700;
+  letter-spacing:3px;
+}
+
+.conference-section h2{
+  margin:0 0 25px;
+  font:500 clamp(42px,5vw,68px)/.98 var(--serif);
+  color:#fff;
+}
+
+.conference-section h2 em{
+  color:var(--gold2);
+  font-style:italic;
+}
+
+.conference-lead{
+  max-width:650px;
+  margin:0 0 30px;
+  color:rgba(255,255,255,.84);
+  font-size:17px;
+  line-height:1.8;
+}
+
+.conference-types{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:12px 30px;
+  margin:0 0 35px;
+}
+
+.conference-types span{
+  padding:12px 0;
+  border-bottom:1px solid rgba(255,255,255,.16);
+  color:#fff;
+  font-size:12px;
+  font-weight:700;
+  letter-spacing:1.3px;
+}
+
+.conference-btn{
+  display:inline-flex;
+  align-items:center;
+  gap:12px;
+  padding:16px 26px;
+  background:var(--gold2);
+  color:#1b1113;
+  font-size:12px;
+  font-weight:800;
+  letter-spacing:1.2px;
+  text-decoration:none;
+  transition:transform .2s ease,box-shadow .2s ease;
+}
+
+.conference-btn:hover{
+  transform:translateY(-2px);
+  box-shadow:0 10px 25px rgba(0,0,0,.25);
+}
+
+.conference-card{
+  min-height:300px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  padding:45px;
+  border:1px solid rgba(198,157,72,.45);
+  background:linear-gradient(145deg,rgba(198,157,72,.12),rgba(0,0,0,.18));
+  text-align:center;
+}
+
+.conference-card-mark{
+  margin-bottom:25px;
+  color:var(--gold2);
+  font-size:46px;
+}
+
+.conference-card p{
+  max-width:280px;
+  margin:0 0 22px;
+  font:italic 28px/1.2 var(--serif);
+  color:#fff;
+}
+
+.conference-card span{
+  color:var(--gold2);
+  font-size:11px;
+  font-weight:800;
+  letter-spacing:3px;
+}
+
+@media(max-width:800px){
+  .conference-inner{
+    grid-template-columns:1fr;
+    gap:45px;
+  }
+
+  .conference-copy{
+    max-width:650px;
+    margin:auto;
+  }
+
+  .conference-section h2{
+    font-size:48px;
+  }
+}
+
+@media(max-width:520px){
+  .conference-section{
+    padding:75px 0;
+  }
+
+  .conference-section h2{
+    font-size:40px;
+  }
+
+  .conference-lead{
+    font-size:15px;
+  }
+
+  .conference-types{
+    grid-template-columns:1fr;
+  }
+
+  .conference-card{
+    min-height:240px;
+    padding:30px;
+  }
+}
