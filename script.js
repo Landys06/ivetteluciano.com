@@ -39,6 +39,12 @@ if(mini.length>=3){
   mini[2].textContent="▶";
 }
 
+/* Nueva fotografía aprobada de Ivette Luciano. */
+const ivettePhoto="assets/ivette-hero-final.jpg";
+document.querySelectorAll(".author-photo,.full-bio-image").forEach(img=>{
+  img.src=ivettePhoto;
+});
+
 const year=document.getElementById("year");
 if(year) year.textContent=new Date().getFullYear();
 
