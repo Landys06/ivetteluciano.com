@@ -1,4 +1,4 @@
-/* PORTADA FINAL — foto original a la derecha, sin modificar */
+/* PORTADA FINAL — nueva foto de Ivette a la derecha */
 .hero{
   background:#000 !important;
   overflow:hidden;
@@ -13,6 +13,7 @@
   width:55% !important;
   z-index:1 !important;
   background-color:#000 !important;
+  background-image:url("assets/1bb9b0a0-cd55-4590-80c6-b2ca7deda2bd.jpg") !important;
   background-repeat:no-repeat !important;
   background-size:contain !important;
   background-position:right center !important;
