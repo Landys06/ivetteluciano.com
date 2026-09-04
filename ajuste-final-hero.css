@@ -18,7 +18,7 @@
     url("assets/1bb9b0a0-cd55-4590-80c6-b2ca7deda2bd.jpg") !important;
   background-repeat:no-repeat !important;
   background-size:cover,contain !important;
-  background-position:center, right center !important;
+  background-position:center,right center !important;
   filter:none !important;
 }
 
@@ -34,25 +34,27 @@
     linear-gradient(to right,#15120f 0%,rgba(21,18,15,.72) 14%,rgba(21,18,15,.20) 45%,rgba(21,18,15,0) 72%);
 }
 
-/* Emblema del Ministerio: globo, laurel, copa y nombre */
+/* LOGO ORIGINAL DEL MINISTERIO — colocado visualmente sobre el púlpito */
 .hero-photo::after{
   content:"";
   position:absolute;
   z-index:4;
-  top:7%;
-  right:5%;
-  width:170px;
-  height:170px;
-  border-radius:50%;
-  opacity:.96;
-  background:
-    radial-gradient(circle at 50% 50%,#8bb7e8 0 26%,#315e9a 27% 49%,transparent 50%),
-    radial-gradient(circle at 50% 42%,rgba(255,255,255,.92) 0 6%,transparent 7%),
-    conic-gradient(from 25deg,transparent 0 9%,#4c9b42 9% 12%,transparent 12% 18%,#4c9b42 18% 21%,transparent 21% 29%,#4c9b42 29% 32%,transparent 32% 68%,#4c9b42 68% 71%,transparent 71% 79%,#4c9b42 79% 82%,transparent 82% 91%,#4c9b42 91% 94%,transparent 94%);
-  box-shadow:0 0 0 2px rgba(246,197,91,.68),0 0 30px rgba(246,197,91,.25);
+  top:39%;
+  left:10%;
+  width:125px;
+  height:125px;
+  border-radius:3px;
+  background-image:url("assets/ministerio-nuevo-pacto-logo.svg");
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:contain;
+  mix-blend-mode:multiply;
+  opacity:.95;
+  filter:drop-shadow(0 2px 5px rgba(0,0,0,.28));
+  pointer-events:none;
 }
 
-/* Nombre del ministerio alrededor del emblema */
+/* El emblema se integra con el área de la fotografía */
 .hero-photo{
   isolation:isolate;
 }
@@ -131,10 +133,10 @@
   }
 
   .hero-photo::after{
-    width:110px;
-    height:110px;
-    top:5%;
-    right:5%;
+    width:95px;
+    height:95px;
+    top:41%;
+    left:10%;
   }
 
   .hero-photo::before{
