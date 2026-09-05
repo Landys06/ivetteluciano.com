@@ -14,3 +14,7 @@
 .full-bio-photo{background:#fff url("assets/ivette.jpg") center top/cover no-repeat !important;min-height:520px !important;}
 .full-bio-image{display:none !important;}
 @media(max-width:800px){.full-bio-photo{min-height:520px !important;max-width:430px !important;}}
+/* CORRECCION: foto visible en SOBRE IVETTE */
+.author-photo-wrap{background:#fff url("assets/ivette.jpg") center 20%/cover no-repeat !important;min-height:500px !important;}
+.author-photo{display:none !important;}
+@media(max-width:680px){.author-photo-wrap{min-height:500px !important;max-width:430px !important;}}
