@@ -77,3 +77,19 @@ if("IntersectionObserver" in window){
 }else{
   reveal.forEach(el=>{el.style.opacity="1";});
 }
+
+/* CONTADOR DE VISITAS — total del sitio ivetteluciano.com */
+(function(){
+  const counterScript=document.createElement("script");
+  counterScript.src="https://counterapi.com/c.js?ns=ivetteluciano.com";
+  counterScript.async=true;
+  document.head.appendChild(counterScript);
+
+  const counterWrap=document.createElement("div");
+  counterWrap.id="ivette-visitor-counter";
+  counterWrap.innerHTML='<span class="visitor-counter-label">VISITAS</span><div class="counterapi" ns="ivetteluciano.com" action="view" key="site-total" label="visitas" icon="eye" noLink="true" color="#f7efe8" bg="#24131d" iconColor="#c9973e" noAnim="false"></div>';
+  counterWrap.style.cssText="position:fixed;right:22px;bottom:18px;z-index:9999;display:flex;align-items:center;gap:9px;padding:8px 12px;border:1px solid rgba(201,151,62,.55);border-radius:999px;background:rgba(255,250,248,.94);box-shadow:0 8px 24px rgba(36,19,29,.14);backdrop-filter:blur(8px);font-family:Montserrat,Arial,sans-serif;transition:opacity .3s ease,transform .3s ease;";
+  const label=counterWrap.querySelector(".visitor-counter-label");
+  label.style.cssText="font-size:9px;letter-spacing:2px;font-weight:700;color:#24131d;white-space:nowrap;";
+  document.body.appendChild(counterWrap);
+})();
