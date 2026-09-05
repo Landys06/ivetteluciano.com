@@ -18,3 +18,6 @@
 .author-photo-wrap{background:#fff url("assets/ivette.jpg") center 20%/cover no-repeat !important;min-height:500px !important;}
 .author-photo{display:none !important;}
 @media(max-width:680px){.author-photo-wrap{min-height:500px !important;max-width:430px !important;}}
+/* NUEVO: Sobre Ivette queda breve; la biografía completa permanece en Biografía */
+.author-copy > p:not(.lead){display:none !important;}
+.author-copy .btn-dark{margin-top:18px !important;}
